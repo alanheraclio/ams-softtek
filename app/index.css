@@ -7,13 +7,8 @@ body {
 	padding: 64px 0 0 0;
 	height: 100%;
 	font-family: RobotoDraft;
-	background-color: #448D7A;
+	background-color: #9FA8DA;
 	color: #fff;
-}
-@media(max-width: 750px){
-	body{
-		background-color: white;
-	}
 }
 
 ul {
@@ -27,13 +22,9 @@ ul {
 	height: 64px;
 	position: fixed;
 	top: 0;
-	background-color: #EBE18C;
-	color: #448D7A;
+	background-color: #1A237E;
+	color: #E8EAF6;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.14);
-}
-@media(max-width: 750px){
-	#main-header {
-	}
 }
 
 
@@ -45,11 +36,6 @@ ul {
 	font-weight: 400;
 	float: left;
 }
-@media(max-width: 750px){
-	h2{
-	color: red;
-	}
-}
 
 #main-header a {
 	margin: 20px 20px 0 0;
@@ -57,7 +43,7 @@ ul {
 	letter-spacing: 1px;
 	font-size: 15px;
 	float: right;
-	color: #448D7A;
+	color: #E8EAF6;
 	text-decoration: none;
 }
 
@@ -67,8 +53,8 @@ ul {
 	top: 120px;
 	left: 50px;
 	width: 20%;
-	background-color: #EBE18C;
-	color: #448D7A;
+	background-color: #1A237E;
+	color: white;
 	text-align: center;
 	border-radius: 1px;
 	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
@@ -94,40 +80,64 @@ ul {
 	color: #fff;
 }
 
+
+
+
+
+
+
+
+
 /*sections*/
 #main-container #main-sections-container{
 	float: right;
 	width: 65%;
 	margin: 56px 50px 0 0;
+	background-color: white;
 }
 @media(max-width: 750px){
 	#main-container #main-sections-container{
-		position: absolute;
+		position: relative;
 		width: 100%;
-		left: center;
+		left: 50px;
+		height: 550px;
+/*		display: none;
+*//*		position: relative;
+		top: 5px;
+		left: center;*/
+/*	width: 100%;
+	left: 20px;
+*/
 
 	}
 }
 
+/*RECUADRO BEIGE*/
 #main-container #main-sections-container section{
 	margin: 0 0 10px 0;
-	background-color: #EBE18C;
+	background-color: #C5CAE9;
 	color: #448D7A;
 	border-radius: 1px;
 	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
 @media(max-width: 750px){
 	section{
-	position: absolute;
-	top: 15;
+	position: relative;
+	top: 20px;
+	height: 450px;
+/*display: none;*/
+/*	position: absolute;
+	top: 80px;
+	left: 0px;
+	width: 100%;*/
 	}
 }
 
-
+/*TITULO NOTICIAS CUADRO */
 #main-container #main-sections-container section header{
 	width: 200px;
 	margin: -8px 0 0 -8px;
-	background-color: #DC3F1C;
+	background-color: #1A237E;
 	padding: 8px;
 	text-align: center;
 	min-height: 30px;
@@ -136,10 +146,14 @@ ul {
 }
 @media(max-width: 750px){
 	section header{
-
+/*	display: none;*/
+	position: relative;
+	left: 23%;
+	top: 20px;
 	}
 }
 
+/*TEXTO TITULO NOTICIAS CUADRO */
 #main-container #main-sections-container section header h2{
 	margin: 0;
 	text-transform: uppercase;
@@ -149,22 +163,25 @@ ul {
 	line-height: 26px;
 }
 
+/*CIRCULO VERDE*/
 #main-container #main-sections-container section div.full{
 	float: right;
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
-	background-color: #448D7A;
+	background-color: #1A237E;
 	color: #fff;
 	margin: 15px 15px 45px 15px;
 }
 @media(max-width: 750px){
 	section div.full{
-		position: absolute;
-		/*top: 200px;*/
+	position: absolute;
+	top: 445px;
+	left: 38%;
 	}
 }
 
+/*letras circulo verde*/
 #main-container #main-sections-container section div.full span{
 	position: relative;
 	top: 17px;
@@ -174,16 +191,24 @@ ul {
 	letter-spacing: 1px;
 }
 
+/*RECUADRO IMAGEN ANARANJADO*/
 #main-container #main-sections-container section article{
 	clear: right;
 	height: 200px;
-	background-color: #dc3f1c;
+	background-color: #1A237E;
 	color: #fff;
 	overflow: hidden;
 }
 @media(max-width: 750px){
 	section article{
-	height: 800px;
+	/*display: none;*/
+	position: relative;
+	margin: 1px;
+	padding: 1px;
+	top: 25px;
+	left: 5%;
+	width: 90%;
+	min-height: 380px;
 	}
 }
 
@@ -193,8 +218,12 @@ ul {
 }
 @media(max-width: 750px){
 	section article img{
-		position: absolute;
-		top: 1px;
+/*	display: none;*/
+	position: absolute;
+	top: 10px;
+	left: 9px;
+	width: 95%;
+	height: 60%;
 	}
 }
 
@@ -204,5 +233,11 @@ ul {
 	font-size: 15px;
 	letter-spacing: 1px;
 	text-align: justify;
-	top: 200px;
+}
+@media(max-width: 750px){
+	section article p{
+/*		display: none;*/
+	position: relative;
+	top: 240px;
+	}
 }
