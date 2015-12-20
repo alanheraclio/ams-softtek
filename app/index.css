@@ -241,3 +241,51 @@ ul {
 	top: 240px;
 	}
 }
+
+#titulo-animacion {
+	position: absolute;
+	background: black;
+	width: 65%;
+	height: 20%;
+	top: 70%;
+	left: 31.2%;
+	overflow: hidden;
+}
+#titulo-animacion h1{
+	position: absolute;
+	background: black;
+	color: black;
+	text-shadow: -2px -2px 1px yellow, 2px 2px 1px yellow, -2px 2px 1px yellow, 2px -2px 1px yellow;
+	font-size: 100px;
+	width: 90%;
+	height: 20%;
+	top: -50%;
+	left: 8%;
+	animation-name: titulo;
+	animation-iteration-count:1;
+	animation-duration:15s;
+}
+#titulo-animacion p{
+	position: absolute;
+	background: black;
+	color: yellow;
+	font-size: 30px;
+	width: 90%;
+	height: 20%;
+	top: -50%;
+	left: 8%;
+	animation-name: texto;
+	animation-iteration-count:1;
+	animation-duration:15s;
+	animation-delay:6s;
+}
+
+@keyframes titulo {
+	from{font-size: 250px; width: 100%; left: -10%;}
+	to{font-size: 0px; left: 40%;}
+}
+
+@keyframes texto {
+	from{font-size: 50px; width: 100%; left: 1%; top: 70%;}
+	to{font-size: 0px; left: 40%;}
+}
