@@ -78,9 +78,6 @@
       return document.getElementById(id);
     }
 
-    /*
-    * Agrega los elementos de acuerdo al callback
-    */
     function addItems(items, callBack) {
       for (var i = 0; i < items.length; i++) {
         callBack(items[i], i);
@@ -113,8 +110,6 @@
       }
     }
     function sendData() {
-      //code to send data
-      //to server/WS
     }
     var publicAPI = {
       getData: getData,

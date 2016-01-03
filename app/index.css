@@ -75,18 +75,20 @@ ul {
 	background: white;
 	height: 20%;
 	width: 100%;
-	transition-duration: .5s;
-  	transform: rotate(180deg);
+	background-color: #1A237E;
+	border-radius: 15px 15px 15px 15px;
+	transition-duration: .3s;
+	background: white;
 }
 .ham-icon_line1after {
 	position: relative;
 	background: white;
 	height: 20%;
 	width: 100%;
-	transition-duration: .5s;
-  	transform: rotate(-45deg);
-  	top: 50%;
-  	
+	background: white;
+	border-radius: 15px 15px 15px 15px;
+	transition-duration: .3s;
+	background-color: #1A237E;
 }
 
 .ham-icon_line2 {
@@ -95,17 +97,22 @@ ul {
 	height: 20%;
 	width: 100%;
 	top: 20%;
-
+	border-radius: 15px 15px 15px 15px;
+	transition-duration: .3s;
+  	transform: rotate(180deg);
 }
 .ham-icon_line2after {
 	position: relative;
-	background: red;
+	background: white;
 	height: 20%;
 	width: 100%;
-	top: 20%;
-	transition-duration: .5s;
-	display: none;
+	border-radius: 15px 15px 15px 15px;
+	transition-duration: .3s;
+  	transform: rotate(-225deg);
+  	top: 24%;
+  	
 }
+
 
 .ham-icon_line3 {
 	position: relative;
@@ -113,7 +120,8 @@ ul {
 	height: 20%;
 	width: 100%;
 	top: 40%;
-	transition-duration: .5s;
+	border-radius: 15px 15px 15px 15px;
+	transition-duration: .3s;
   	transform: rotate(180deg);
 }
 .ham-icon_line3after {
@@ -122,9 +130,10 @@ ul {
 	height: 20%;
 	width: 100%;
 	top: 40%;
-	transition-duration: .5s;
-  	transform: rotate(45deg);
-  	top:29%;
+	border-radius: 15px 15px 15px 15px;
+	transition-duration: .3s;
+  	transform: rotate(-135deg);
+  	top: 4%;
 }
 
 /*CLASES Y TRANCISIONES DE X A ICONO DE HAM*/
@@ -142,16 +151,14 @@ ul {
 	}
 }
 
-
-
 /*aside*/
 #main-container aside#main-navafter {
-	display: block;
+	display: none;
 	position: fixed;
-	top: 90px;
+	top: 11.5%;
 	left: 2%;
 	width: 96%;
-	height: 80%;
+	height: 70%;
 	background-color: #1A237E;
 	color: white;
 	font-size: 40px;
@@ -159,6 +166,15 @@ ul {
 	border-radius: 1px;
 	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 	transition-duration: .5s;
+}
+#main-container #main-navafter nav li:hover{
+	background-color: #DC3F1C;
+	color: #fff;
+}
+@media(max-width: 750px){
+	#main-container aside#main-navafter {
+		display: block;
+	}
 }
 #main-container aside#main-nav {
 	position: fixed;
@@ -192,17 +208,11 @@ ul {
 	color: #fff;
 }
 
-
-
-
-
-
-
-
-
 /*sections*/
 #main-container #main-sections-container{
-	float: right;
+	position: absolute;
+	top: 21%;
+	left: 31%;
 	width: 65%;
 	margin: 56px 50px 0 0;
 	background-color: white;
@@ -211,15 +221,15 @@ ul {
 	#main-container #main-sections-container{
 		position: relative;
 		width: 100%;
-		left: 50px;
+		left: 0px;
 		height: 550px;
+		top: 40%;
 	}
 }
 #main-containerafter{
 	display: none;
 }
 
-/*RECUADRO BEIGE*/
 #main-container #main-sections-container section{
 	margin: 0 0 10px 0;
 	background-color: #C5CAE9;
@@ -232,15 +242,9 @@ ul {
 	position: relative;
 	top: 20px;
 	height: 450px;
-/*display: none;*/
-/*	position: absolute;
-	top: 80px;
-	left: 0px;
-	width: 100%;*/
 	}
 }
-
-/*TITULO NOTICIAS CUADRO */
+/*TITULO NOTICIAS SECCIONES*/
 #main-container #main-sections-container section header{
 	width: 200px;
 	margin: -8px 0 0 -8px;
@@ -253,14 +257,12 @@ ul {
 }
 @media(max-width: 750px){
 	section header{
-/*	display: none;*/
 	position: relative;
 	left: 23%;
 	top: 20px;
 	}
 }
 
-/*TEXTO TITULO NOTICIAS CUADRO */
 #main-container #main-sections-container section header h2{
 	margin: 0;
 	text-transform: uppercase;
@@ -270,7 +272,7 @@ ul {
 	line-height: 26px;
 }
 
-/*CIRCULO VERDE*/
+/*CIRCULO*/
 #main-container #main-sections-container section div.full{
 	float: right;
 	width: 60px;
@@ -287,8 +289,7 @@ ul {
 	left: 38%;
 	}
 }
-
-/*letras circulo verde*/
+/*letras circulo*/
 #main-container #main-sections-container section div.full span{
 	position: relative;
 	top: 17px;
@@ -298,7 +299,7 @@ ul {
 	letter-spacing: 1px;
 }
 
-/*RECUADRO IMAGEN ANARANJADO*/
+/*RECUADRO IMAGEN*/
 #main-container #main-sections-container section article{
 	clear: right;
 	height: 200px;
@@ -308,7 +309,6 @@ ul {
 }
 @media(max-width: 750px){
 	section article{
-	/*display: none;*/
 	position: relative;
 	margin: 1px;
 	padding: 1px;
@@ -325,7 +325,6 @@ ul {
 }
 @media(max-width: 750px){
 	section article img{
-/*	display: none;*/
 	position: absolute;
 	top: 10px;
 	left: 9px;
@@ -333,7 +332,6 @@ ul {
 	height: 60%;
 	}
 }
-
 
 #main-container #main-sections-container section article p{
 	margin: 10px;
@@ -343,32 +341,33 @@ ul {
 }
 @media(max-width: 750px){
 	section article p{
-/*		display: none;*/
 	position: relative;
 	top: 240px;
 	}
 }
 
 /*ANIMACION*/
-
 #titulo-animacion {
 	position: absolute;
 	background: black;
 	width: 65%;
 	height: 20%;
-	top: 10%;
+	top: 8%;
 	left: 31.2%;
 	overflow: hidden;
 }
 @media(max-width: 750px){
 	#titulo-animacion{
-/*	display: none;*/
 	position: absolute;
 	top: 65px;
 	left: 0px;
 	width: 100%;
 	height: 13%;
 	}
+}
+
+#titulo-animacionafter {
+	display: none;
 }
 
 #titulo-animacion h1{
@@ -379,18 +378,17 @@ ul {
 	font-size: 100px;
 	width: 90%;
 	height: 20%;
-	top: -50%;
+	top: -40%;
 	left: 8%;
 	animation-name: titulo;
 	animation-iteration-count:1;
-	animation-duration:14s;
+	animation-duration:12.5s;
 }
 @media(max-width: 750px){
 	#titulo-animacion h1{
-/*	display: none;*/
 	position: absolute;
 	font-size: 50px;
-	top: -30px;
+	top: -20px;
 	left: 3%;
 	}
 }
@@ -398,11 +396,10 @@ ul {
 	position: absolute;
 	background: black;
 	color: yellow;
-	font-size: 30px;
+	font-size: 48px;
 	width: 90%;
 	height: 20%;
-	top: -110%;
-	left: 8%;
+	left: 0%;
 	visibility: hidden;
 	animation-name: texto;
 	animation-iteration-count:1;
@@ -411,10 +408,8 @@ ul {
 }
 @media(max-width: 750px){
 	#titulo-animacion p{
-/*	display: none;*/
 	position: absolute;
-	font-size: 60px;
-	left: 0px;
+	font-size: 20px;
 	visibility: hidden;
 	}
 }
@@ -425,6 +420,6 @@ ul {
 }
 
 @keyframes texto {
-	from{visibility: hidden; font-size: 50px; width: 100%; left: 1%; top: 70%;}
-	to{visibility: visible; font-size: 0px; left: 40%;}
+	from{visibility: hidden; width: 100%; top: 70%;}
+	to{visibility: visible; font-size: 10px; left: 30%; top: -150%;}
 }
